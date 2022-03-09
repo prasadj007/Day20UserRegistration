@@ -9,4 +9,9 @@ public class UserRegistration {
 	        boolean check = Pattern.matches("([A-Z][a-z]{2,})",name);
 	        return check;
 	    }
+	
+    public boolean lastName(String name){
+        boolean check = Pattern.matches("([A-Z][a-z]{2,})",name);
+        return check;
+    }
 	}
