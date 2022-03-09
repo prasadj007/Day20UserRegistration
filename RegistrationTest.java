@@ -14,4 +14,10 @@ class RegistrationTest {
 	        boolean name = user.firstName("John");
 	        Assert.assertTrue(name);
 	    }
+	  @Test
+	    public void givenLastName_WhenMatchedShouldReturnTrue(){
+	        UserRegistration user = new UserRegistration();
+	        boolean lastName = user.lastName("Wick");
+	        Assert.assertTrue(lastName);
+	    }
 }
