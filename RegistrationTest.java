@@ -26,4 +26,10 @@ class RegistrationTest {
 	        boolean email = user.emailCheck("abc.xyz@bl.co.in");
 	        Assert.assertTrue(email);
 	    }
+	  @Test
+	  public void givenAMobileNumberPatternWhenMatchedShouldReturnTrue(){
+	        UserRegistration user = new UserRegistration();
+	        boolean number = user.numberCheck("91 7003321213");
+	        Assert.assertTrue(number);
+	    }
 }

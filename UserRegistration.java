@@ -21,6 +21,14 @@ public class UserRegistration {
 		return check;
 	}
 
-}
+	public boolean numberCheck(String number) {
+		 
+		        boolean check = Pattern.matches("[9][1][\s][0-9]{10}",number);
+		        return check;
+		    }
+		
+	}
+
+
 
 
