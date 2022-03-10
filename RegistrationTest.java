@@ -20,4 +20,10 @@ class RegistrationTest {
 	        boolean lastName = user.lastName("Wick");
 	        Assert.assertTrue(lastName);
 	    }
+	  @Test
+	    public void givenAEmailPatternWhenMatchedShouldReturnTrue(){
+	        UserRegistration user = new UserRegistration();
+	        boolean email = user.emailCheck("abc.xyz@bl.co.in");
+	        Assert.assertTrue(email);
+	    }
 }
