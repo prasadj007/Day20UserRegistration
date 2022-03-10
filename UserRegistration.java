@@ -26,7 +26,10 @@ public class UserRegistration {
 		        boolean check = Pattern.matches("[9][1][\s][0-9]{10}",number);
 		        return check;
 		    }
-		
+	 public boolean checkPassword(String password){
+	        boolean check = Pattern.matches("[a-z]{8}", password);
+	        return check;
+	    }
 	}
 
 

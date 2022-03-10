@@ -32,4 +32,10 @@ class RegistrationTest {
 	        boolean number = user.numberCheck("91 7003321213");
 	        Assert.assertTrue(number);
 	    }
+	  @Test
+	    public void givenAPasswordPatternWhenMatchedShouldReturnTrue(){
+	        UserRegistration user = new UserRegistration();
+	        boolean password = user.checkPassword("xxxxxxxx");
+	        Assert.assertTrue(password);
+	    }
 }
